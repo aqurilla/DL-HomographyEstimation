@@ -5,9 +5,9 @@
 `Wrapper.py` can be run by calling `python3 Wrapper.py` with the following arguments:
 
 ```
-	--NumFeatures [Number of corners to consider per component image. Note that a panorama-in-progress containing N component images will have N x NumFeatures corners]
-	--ImDir [A unix expression (interpretable by glob) for the images to attempt to stitch. Images are sorted in alphanumeric order by name and are stitched in that order]
-	--RansacIters [Number of iterations of RANSAC to perform]
+--NumFeatures [Number of corners to consider per component image. Note that a panorama-in-progress containing N component images will have N x NumFeatures corners]
+--ImDir [A unix expression (interpretable by glob) for the images to attempt to stitch. Images are sorted in alphanumeric order by name and are stitched in that order]
+--RansacIters [Number of iterations of RANSAC to perform]
 ```
 
 Note that images are displayed and saved using calls to `displayAndSave` on lines 66,80,90,101,116, and 135. By default, images are saved to a directory `../Output`, as specified on lines 197 and 192 of `helpers.py`. Filenames should be changed on the aforementioned lines of `Wrapper.py`.
